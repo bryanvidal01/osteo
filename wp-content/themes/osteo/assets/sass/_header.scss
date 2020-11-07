@@ -1,0 +1,16 @@
+header{
+  padding: 70px 65px;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  left: 0;
+  width: 100%;
+
+  .intro{
+    margin-top: 18px;
+  }
+  .select-theme{
+    padding-top: 17px;
+    display: block;
+  }
+}

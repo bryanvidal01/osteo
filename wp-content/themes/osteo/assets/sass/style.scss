@@ -1,0 +1,107 @@
+@import 'reset';
+@import 'bootstrap';
+@import 'fonts';
+@import 'variables';
+@import 'commons';
+@import 'components';
+@import 'header';
+@import 'intro';
+@import 'video-full';
+@import 'cursor';
+@import 'skills';
+
+body{
+  background: $beige;
+  font-family: $sans_serif_regular;
+  -webkit-font-smoothing : antialiased;
+  font-size: 18px;
+}
+
+
+#burger-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 50vh 50vw;
+  float: right;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted #333;
+}
+
+#burger-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#burger-circle.white {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+#menu-burger {
+  width: 14px;
+  height: 22px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+  pointer-events: initial;
+}
+
+.menu-overlay #menu-burger {
+  display: block;
+}
+
+#menu-burger span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  opacity: 1;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.light-content #menu-burger span {
+  background: #fff;
+}
+
+#menu-burger.white span {
+  background: #fff;
+}
+
+#menu-burger span:nth-child(1) {
+  top: 8px;
+}
+
+#menu-burger span:nth-child(2) {
+  top: 14px;
+}
+
+#menu-burger.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 10px;
+}
+

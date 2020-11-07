@@ -1,0 +1,84 @@
+.image-follow{
+  position: relative;
+  display: block;
+  .follow-image{
+    display: none;
+    position: absolute;
+  }
+
+  &:hover{
+    .follow-image{
+      display: block;
+    }
+  }
+}
+
+
+.button-round{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  border: 0;
+  display: inline-block;
+  background: transparent;
+
+  &.white{
+    color: #FFF;
+    .round{
+      border-color: #FFF;
+    }
+  }
+
+  .round{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $black;
+    will-change: transform;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: .2s;
+
+    &.is-hover{
+      transition: 0s;
+    }
+  }
+}
+
+
+button.navigation{
+  width: 70px;
+  height: 70px;
+  border: 1.1px rgba(0,0,0,0.13) solid;
+  border-radius: 80px;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  margin-top: -4px;
+
+  &:before{
+    content: 'Menu';
+    font-family: $sans_serif_regular;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 20px);
+  }
+
+  .bar{
+    width: 11px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:last-child{
+      top: auto;
+      bottom: 31px;
+    }
+  }
+}

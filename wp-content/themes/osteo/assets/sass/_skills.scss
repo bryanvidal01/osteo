@@ -1,0 +1,45 @@
+section.skills{
+  padding: 130px 45px;
+
+  .list-skills{
+    display: inline-block;
+    margin-top: 15px;
+    li{
+      position: relative;
+      transition: .3s;
+      cursor: pointer;
+      &:before{
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: #000;
+        position: absolute;
+        border-radius: 50%;
+        top: 8px;
+        left: -10px;
+        opacity: 0;
+        transition: .3s;
+      }
+      &:hover{
+        transform: translate3D(10px, 0, 0);
+        z-index: 300;
+        &:before{
+          opacity: 1;
+        }
+      }
+      .image-follow{
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .text-about{
+    text-align: left;
+    max-width: 337px;
+    display: inline-block;
+  }
+
+  .container-text{
+    margin-top: 50px;
+  }
+}
