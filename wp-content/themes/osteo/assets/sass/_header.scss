@@ -6,11 +6,42 @@ header{
   left: 0;
   width: 100%;
 
+  .logo{
+    max-width: 120px;
+    display: block;
+    position: relative;
+    top: -5px;
+
+    img{
+      width: 100%;
+    }
+  }
+
   .intro{
     margin-top: 18px;
+    font-size: 18px;
+    color: #fff;
   }
-  .select-theme{
-    padding-top: 17px;
-    display: block;
+
+  .navigation{
+    text-align: right;
+    padding-top: 10px;
+    li{
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-right: 30px;
+      a{
+        color: #FFF;
+        font-weight: 800;
+      }
+
+      &.last{
+        a{
+          background: #89b4c0;
+          padding: 10px 30px;
+        }
+      }
+    }
   }
 }

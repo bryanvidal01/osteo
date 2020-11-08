@@ -50,12 +50,16 @@ function scripts_site(){
 
 
 
+
+
 // Image Sizes
 add_image_size( 'galerieSize', 400, 400, true );
 add_image_size( 'imageStratePartners', 800, 800, true );
 
 add_image_size( 'presentationPortraitSize', 1000, 1200, true );
 add_image_size( 'presentationPaysageSize', 1920, 1080, true );
+add_image_size( '390_490', 390, 490, true );
+add_image_size( '390_520', 390, 520, true );
 
 
 
