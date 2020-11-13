@@ -12,10 +12,12 @@ $page_content_text_background_blue_text = get_sub_field('page_content_text_backg
                 <h3 class="title medium">
                     <?= $page_content_text_background_blue_sup_title; ?>
                 </h3>
-                <h4 class="title big">
+                <h4 class="title big-medium">
                     <?= $page_content_text_background_blue_title; ?>
                 </h4>
+                <div class="text-medium">
                 <?= $page_content_text_background_blue_text; ?>
+                </div>
             </div>
         </div>
     </div>

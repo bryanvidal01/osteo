@@ -15,10 +15,10 @@ get_header();
 ?>
 
 
-<div class="intro-page" style="background-image: url('<?php echo $page_content_image_URL; ?>');">
+<div class="intro-page not-home" style="background-image: url('<?php echo $page_content_image_URL; ?>');">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-8 mx-auto">
                 <div class="text-content">
                     <?php if($page_hero_title_intro): ?>
                         <h1 class="title big">

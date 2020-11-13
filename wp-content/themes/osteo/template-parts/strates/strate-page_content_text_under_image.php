@@ -18,12 +18,14 @@
                 $page_content_text_under_image_item_text = $page_content_text_under_image_item['page_content_text_under_image_item_text'];
             ?>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <img src="<?= $page_content_text_under_image_item_image_URL; ?>" alt="" width="100%">
                 <h3 class="title">
                     <?= $page_content_text_under_image_item_title; ?>
                 </h3>
-                <?= $page_content_text_under_image_item_text; ?>
+                <div class="description-push-under text-medium">
+                    <?= $page_content_text_under_image_item_text; ?>
+                </div>
             </div>
             <?php endforeach; ?>
         </div>
