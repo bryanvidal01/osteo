@@ -6,33 +6,9 @@
             </div>
 
             <div class="col-sm-6">
-                <ul class="navigation-footer">
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li class="last">
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                </ul>
+                <div class="navigation-footer">
+                    <?php wp_nav_menu( ); ?>
+                </div>
             </div>
         </div>
     </div>

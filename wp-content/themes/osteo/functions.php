@@ -2,7 +2,7 @@
 define('THEME_DIR', get_template_directory() . '/');
 define('THEME_URL', get_template_directory_uri() . '/');
 define('HOME_URL', get_home_url());
-define('AJAX_URL', THEME_URL . 'ajax-min.php');
+define('AJAX_URL', admin_url( 'admin-ajax.php' ));
 
 //Correspondance de page
 /*define('PAGE_PRESENTATION', get_field('params_page_presentation', 'option'));
@@ -38,6 +38,8 @@ function scripts_site(){
 
 
         wp_enqueue_style( 'style_principal', get_template_directory_uri() . '/assets/stylesheets/style.css' );
+
+        wp_enqueue_script( 'script-js', get_template_directory_uri() . '/assets/js/app.js' );
 
         $dataToBePassed = array(
             'wp_ajax_url' => AJAX_URL,

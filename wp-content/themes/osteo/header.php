@@ -12,7 +12,6 @@
 
     <script  src='<?php echo get_template_directory_uri();?>/assets/js/jquery.js'></script>
     <script  src='<?php echo get_template_directory_uri();?>/assets/js/slick.js'></script>
-    <script  src='<?php echo get_template_directory_uri();?>/assets/js/app.js'></script>
     <?php wp_head(); ?>
 </head>
 
@@ -21,44 +20,20 @@
 <header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-1">
+            <div class="col-sm-2">
                 <a href="<?php echo get_site_url(); ?>" class="logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo Casa">
                 </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5">
                 <h1 class="intro uppercase">
                     Tierosteo Schuepbach
                 </h1>
             </div>
             <div class="col-sm-5 text-right">
-                <ul class="navigation">
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                    <li class="last">
-                        <a href="">
-                            Lien
-                        </a>
-                    </li>
-                </ul>
+                <div class="navigation">
+                    <?php wp_nav_menu( ); ?>
+                </div>
             </div>
         </div>
     </div>

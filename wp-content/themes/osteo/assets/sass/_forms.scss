@@ -1,0 +1,78 @@
+input[type="text"], select, textarea{
+  width: 100%;
+  resize: none;
+  border: 2px solid #ddd;
+  padding: 9px 15px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  color: #888;
+  font-size: 16px;
+  background: transparent;
+
+  &:focus{
+    outline: none;
+  }
+
+  &.error{
+    border-bottom: 2px solid #ba1a1a;
+  }
+
+}
+
+select{
+  background: url('../images/drop.svg');
+  background-repeat: no-repeat;
+  background-position:  calc(100% - 5px) 4px;
+}
+
+label{
+  width: 100%;
+  display: block;
+  font-weight: 600;
+  color: $blueDark;
+  margin-top: 30px;
+}
+
+.section-form-resa{
+  .button{
+    margin-top: 25px;
+    background: #89b4c0;
+    font-size: 14px !important;
+    color: #FFF;
+    font-weight: 600 !important;
+    padding: 12px 30px;
+    display: inline-block;
+    width: auto;
+  }
+
+  .title.big-medium{
+    margin-bottom: 0;
+  }
+}
+
+
+#rendez-vous{
+  position: relative;
+
+  .popin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    border: 9px solid $blueClear;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    .info-return{
+      position: absolute;
+      top: 50%;
+      font-size: 28px;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      font-weight: 600;
+      color: $blueDark;
+    }
+  }
+}

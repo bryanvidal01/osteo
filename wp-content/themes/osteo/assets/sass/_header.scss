@@ -7,7 +7,7 @@ header{
   width: 100%;
 
   .logo{
-    max-width: 120px;
+    max-width: 150px;
     display: block;
     position: relative;
     top: -5px;
@@ -20,6 +20,7 @@ header{
   .intro{
     margin-top: 18px;
     font-size: 18px;
+    font-weight: 600;
     color: #fff;
   }
 
@@ -30,10 +31,40 @@ header{
       display: inline-block;
       text-transform: uppercase;
       font-size: 14px;
-      padding-right: 30px;
+      padding: 0 10px;
+      margin: 0 5px;
+      position: relative;
       a{
         color: #FFF;
         font-weight: 800;
+      }
+
+      &:hover{
+        .sub-menu{
+          display: block;
+        }
+      }
+
+      .sub-menu{
+        position: absolute;
+        width: 100%;
+        display: none;
+        text-align: left;
+        left: 0;
+        padding-top: 5px;
+        li{
+          display: block;
+          padding: 3px 0;
+          margin-right: 0;
+          text-align: center;
+          border-top: 1px solid rgba(#FFF, .2);
+
+          a{
+            font-weight: 400;
+            font-size: 13px;
+            text-transform: none;
+          }
+        }
       }
 
       &.last{
