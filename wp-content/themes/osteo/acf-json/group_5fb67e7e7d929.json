@@ -98,6 +98,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5fea4e08503eb",
+            "label": "Disponibilités",
+            "name": "post_appointment_disponibility",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5fb67f1c74d59",
             "label": "Informations complémentaires",
             "name": "post_appointment_informations",
@@ -134,5 +153,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1605795808
+    "modified": 1609191012
 }

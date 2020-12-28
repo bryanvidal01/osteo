@@ -55,6 +55,23 @@
 .text-medium{
   font-size: 16px;
   color: #888;
+
+  ul{
+    li{
+      &:before{
+        content: '•';
+        margin-right: 10px;
+      }
+    }
+  }
+
+  h2{
+    font-weight: 600;
+    color: #1d4154;
+    letter-spacing: .03em;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 }
 
 .white{

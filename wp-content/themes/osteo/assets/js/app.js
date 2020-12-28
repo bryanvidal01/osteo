@@ -9,6 +9,7 @@ $(document).ready(function(){
         var userPhone = $(this).find('#yourPhone');
         var userSubject = $(this).find('#yourNeed option:checked');
         var userMessage = $(this).find('#yourMessage');
+        var userDisponibility = $(this).find('#yourDisponibility');
         var donotreply = $(this).find('#donotreply');
 
         var error = 0;
@@ -40,6 +41,13 @@ $(document).ready(function(){
             userMail.removeClass('error');
         }
 
+        if(userDisponibility.val() == ''){
+            userDisponibility.addClass('error');
+            error++;
+        }else{
+            userDisponibility.removeClass('error');
+        }
+
         if(userPhone.val() == ''){
             userPhone.addClass('error');
             error++;
@@ -62,6 +70,7 @@ $(document).ready(function(){
                     'userPhone' : userPhone.val(),
                     'userSubject' : userSubject.val(),
                     'userMessage' : userMessage.val(),
+                    'userDisponibility' : userDisponibility.val(),
                     'donotreply' : donotreply.val()
                 },
                 function (response) {

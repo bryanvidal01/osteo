@@ -11,14 +11,17 @@ function send_message()
     $userPhone = $_POST['userPhone'];
     $userMessage = $_POST['userMessage'];
     $userSubject = $_POST['userSubject'];
+    $userDisponibility = $_POST['userDisponibility'];
     $donotreply = $_POST['donotreply'];
 
-    if($userName && $userSecondName && $userMail && $userPhone && $userSubject && !$donotreply){
+    if($userName && $userSecondName && $userMail && $userPhone && $userSubject && $userDisponibility && !$donotreply){
 
         $messageImport = 'Nom : ' . $userName . '<br/>';
         $messageImport .= 'Prénom : ' . $userSecondName . '<br/>';
         $messageImport .= 'Mail : ' . $userMail . '<br/>';
         $messageImport .= 'Téléphone : ' . $userPhone . '<br/>';
+        $messageImport .= 'Sujet : ' . $userSubject . '<br/>';
+        $messageImport .= 'Disponibilités : ' . $userDisponibility . '<br/>';
         $messageImport .= 'Informations complémentaires : ' . $userMessage;
 
         $newPost = array(
@@ -33,6 +36,7 @@ function send_message()
         update_field( 'post_appointment_mail', $userMail, $newPostImported );
         update_field( 'post_appointment_phone', $userPhone, $newPostImported );
         update_field( 'post_appointment_subject', $userSubject, $newPostImported );
+        update_field( 'post_appointment_disponibility', $userDisponibility, $newPostImported );
         update_field( 'post_appointment_informations', $userMessage, $newPostImported );
 
         $to = get_field('params_mail_address', 'option');
@@ -43,8 +47,6 @@ function send_message()
         $headers = array('Content-Type: text/html; charset=UTF-8');
 
         wp_mail( $to, $subject, $messageImport, $headers);
-
-
 
         $returnDatas['message'] = 'Votre message a bien été envoyé';
         $returnDatas['code'] = 200;

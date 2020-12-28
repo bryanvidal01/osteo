@@ -561,6 +561,33 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5fea4673669c2": {
+                    "key": "layout_5fea4673669c2",
+                    "name": "strate_separator",
+                    "label": "Strate séparateur",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fea4683669c3",
+                            "label": "Ajouter un séparateur",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Un séparateur est présent à cet endroit",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Ajouter un élément",
@@ -585,5 +612,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1605103737
+    "modified": 1609189053
 }

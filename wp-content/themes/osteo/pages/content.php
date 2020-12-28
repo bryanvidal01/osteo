@@ -7,7 +7,7 @@ $page_hero_title_intro = get_the_title();
 $page_content_image = get_field('page_content_image');
 
 if($page_content_image){
-    $page_content_image_URL = lsd_get_thumb($page_content_image, '1920_1080');
+    $page_content_image_URL = lsd_get_thumb($page_content_image, 'presentationPaysageSize');
 }
 $page_content_intro = get_field('page_content_intro');
 

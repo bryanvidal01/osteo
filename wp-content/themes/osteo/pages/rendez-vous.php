@@ -7,7 +7,7 @@ $page_hero_title_intro = get_the_title();
 $page_content_image = get_field('page_content_image');
 
 if($page_content_image){
-    $page_content_image_URL = lsd_get_thumb($page_content_image, '1920_1080');
+    $page_content_image_URL = lsd_get_thumb($page_content_image, 'presentationPaysageSize');
 }
 $page_content_intro = get_field('page_content_intro');
 
@@ -97,8 +97,14 @@ get_header();
                     </option>
                 </select>
             </div>
+            <div class="col-sm-6">
+                <label for="yourDisponibility">
+                    Disponibilités
+                </label>
+                <input type="text" name="yourDisponibility" placeholder="Renseigner vos disponibilités (exemple : lundi 14h)" id="yourDisponibility">
+            </div>
             <div class="col-sm-12">
-                <label for="yourMessage">Informations complémentaires</label>
+                <label for="yourMessage">Motif de consultation</label>
                 <textarea name="yourMessage" placeholder="Votre message..." id="yourMessage" cols="30" rows="10"></textarea>
             </div>
 
